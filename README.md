@@ -1,2 +1,10 @@
-# Ура!!! Новые лабы....
-![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnZubHN0MXRrOGliaTMzZnlpNnA1b25jc2lxZmRncnQwbDNleDd4ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/iKCsewm3YlacNyVTJK/giphy.gif)
+# Лабораторная работа №1
+## Вариант: 7. Фитнес / Спорт
+### Реализация класса Player, который создает игроков бейсбола, в файле model.py:
+![](/media/lab01/часть_класса_Player.png)
+### Валидация свойств класса Player в файле validate.py:
+![](/media/lab01/часть_примера_валидации.png)
+### Демонстрация класса Player в файле demo.py:
+![](/media/lab01/часть_кода_demo.png)
+### Вывод demo.py с примерами и проверками:
+![](/media/lab01/пример_выполнения_demo.png)
