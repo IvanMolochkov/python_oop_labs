@@ -8,10 +8,6 @@ def validate_name(name: str):
     name = name.strip()
     if not name:
         raise ValueError("name cannot be empty")
-    if len(name) < 2:
-        raise ValueError("name must be at least 2 characters long")
-    if len(name) > 50:
-        raise ValueError("name must not exceed 50 characters")
     return name
  
  
