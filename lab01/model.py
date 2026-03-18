@@ -30,7 +30,7 @@ class Player:
     @property
     def age(self):
         return self._age
- 
+
     @property
     def batting_avg(self):
         return self._batting_avg
