@@ -100,7 +100,7 @@ class Player:
     
     # подсчет игроков (класс-метод)
     @classmethod
-    def total_players(cls) -> int:
+    def total_players(cls):
         return cls._count
     
     # магические методы
