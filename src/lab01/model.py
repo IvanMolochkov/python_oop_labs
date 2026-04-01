@@ -7,8 +7,6 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
 from validate import (validate_name, validate_age, validate_team, validate_batting_average, validate_home_runs, validate_position, validate_status)
 
 class Player:
-    position_example = ("P", "C", "1B", "2B", "3B", "SS", "LF", "CF", "RF", "DH")
-    status_example  = ("yes", "no, injured", "no, retired")
     _count: int = 0
     
     # описание игрока
