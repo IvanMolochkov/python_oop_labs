@@ -48,15 +48,15 @@ class Player:
     # сеттеры
     @batting_avg.setter
     def batting_avg(self, value: float):
-        self._batting_avg = value
+        self._batting_avg = validate_batting_average(value)
  
     @home_runs.setter
     def home_runs(self, value: int):
-        self._home_runs = value
+        self._home_runs = validate_home_runs(value)
  
     @age.setter
     def age(self, value: int):
-        self._age = value
+        self._age = validate_age(value)
     
     # перевод в другую команду
     def team_change(self, new_team: str):
