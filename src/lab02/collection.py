@@ -17,10 +17,11 @@ class PlayerList():
             raise TypeError("Игрок с таким именем уже существует")
         
         self._items.append(item)
-        
+    
     def remove(self, item):
         try:
             self._items.remove(item)
+            
         except ValueError as e:
             print(f"{type(e).__name__}: Нельзя удалять несуществующего игрока")
         
@@ -39,11 +40,14 @@ class PlayerList():
     def __getitem__(self, id):
         try:
             return self._items[id]
+        
         except IndexError as e:
             return f"{type(e).__name__}: Игрок с таким индексом не найден"
+    
     def remove_at(self, index):
         try:
             self._items = list(e for e in self._items if e != self._items[index])
+            
         except IndexError as e:
             print(f"{type(e).__name__}: Игрок с таким индексом не найден")
         
@@ -59,11 +63,12 @@ class PlayerList():
     def sort(self, key, reverse: bool = False):
         try:
             self._items = sorted(self._items, key=lambda e: getattr(e, key), reverse=reverse)
+        
         except AttributeError as e:
             print(f"{type(e).__name__}: Такого аттрибута не существует")
             
     def get_active(self):
-        return list(e for e in self._items if e.status == "yes")
+        return list(e for e in self._items if e.status == "yes") if list(e for e in self._items if e.status == "yes") != list() else "В этом сезоне никто не играет("
     
     def get_top(self):
-        return list(e for e in self._items if e.performance_grade() == "very good")
+        return list(e for e in self._items if e.performance_grade() == "very good") if list(e for e in self._items if e.performance_grade() == "very good") != list() else "Топов нет("
