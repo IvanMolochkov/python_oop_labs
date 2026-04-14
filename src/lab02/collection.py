@@ -1,15 +1,26 @@
 import sys
 import os
- 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
 
-from model import Player
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
+from src.lab03.base import Player as P
+
+try:
+    from model import Player as P
+except:
+    pass
+
+try:
+    from models import Pitcher, Defensive # type: ignore
+except:
+    pass
 
 class PlayerList():
-    _items = []
+    def __init__(self):
+        self._items = list()
     
     def add(self, item):
-        if not isinstance(item, Player):
+        if not isinstance(item, P):
             raise TypeError("Дружище, добавлять можно только Бейсболистов")
         if list(e for e in self._items if e == item) != list():
             raise TypeError("Нельзя добавлять дубликат")
@@ -29,7 +40,7 @@ class PlayerList():
         return self._items
     
     def find_by_name(self, name):
-        return next((e for e in self._items if e.name == name), "Игрок с таким именем не найден")
+        return ((e for e in self._items if e.name == name), "Игрок с таким именем не найден")
     
     def __len__(self):
         return len(self._items)
@@ -65,10 +76,19 @@ class PlayerList():
             self._items = sorted(self._items, key=lambda e: getattr(e, key), reverse=reverse)
         
         except AttributeError as e:
-            print(f"{type(e).__name__}: Такого аттрибута не существует")
+            print(f"{type(e).__name__}: Такого атрибута не существует")
             
     def get_active(self):
         return list(e for e in self._items if e.status == "yes") if list(e for e in self._items if e.status == "yes") != list() else "В этом сезоне никто не играет("
     
     def get_top(self):
         return list(e for e in self._items if e.performance_grade() == "very good") if list(e for e in self._items if e.performance_grade() == "very good") != list() else "Топов нет("
+    
+    def calculate_all(self):
+        return list(f"{e._name}: {e.calculate()}" for e in self._items)
+    
+    def get_only_pitchers(self):
+        return list(e for e in self._items if isinstance(e, Pitcher))
+
+    def get_only_defensive(self): 
+        return list(e for e in self._items if isinstance(e, Defensive))
