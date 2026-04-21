@@ -15,6 +15,11 @@ try:
 except:
     pass
 
+try:
+    from interfaces import Printable, Calculate # type: ignore
+except:
+    pass
+
 class PlayerList():
     def __init__(self):
         self._items = list()
@@ -92,3 +97,13 @@ class PlayerList():
 
     def get_only_defensive(self): 
         return list(e for e in self._items if isinstance(e, Defensive))
+    
+    def get_printable(self):
+        return [e for e in self._items if isinstance(e, Printable)]
+
+    def get_calculable(self):
+        return [e for e in self._items if isinstance(e, Calculate)]
+    
+    def sort_by_calculate(self):
+        calculable = self.get_calculable()
+        return sorted(calculable, key=lambda x: x.calculate())
