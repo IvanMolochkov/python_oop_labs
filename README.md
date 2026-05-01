@@ -3,4 +3,4 @@
 ![](https://github.com/outtathe/ml-ds/raw/develop/materials/meme.jpeg)
 ![](https://github.com/outtathe/ml-ds/raw/develop/materials/meme.jpg)
 
-![](/media/lab01/прогер-gif.gif)
+<img src="/Users/ivanmolochkov/Documents/python_oop_labs/media/lab01/прогер-gif.gif" width="400">
