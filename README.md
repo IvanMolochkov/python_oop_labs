@@ -3,4 +3,4 @@
 ![](https://github.com/outtathe/ml-ds/raw/develop/materials/meme.jpeg)
 ![](https://github.com/outtathe/ml-ds/raw/develop/materials/meme.jpg)
 
-![](/media/lab01/прогер.gif)
+![](/media/lab01/прогер-gif.gif)
