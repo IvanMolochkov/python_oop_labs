@@ -83,4 +83,4 @@ class TypedCollection(Generic[T]):
         return [item for item in self._items if predicate(item)]
 
     def map(self, transform: Callable[[T], R]) -> list[R]:
-        return [transform(item) for item in self._items]
+        return [transform(item) for item in self._items] 
