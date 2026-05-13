@@ -1,7 +1,48 @@
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3QxazV3ZnM3ank4amw2Ync1YXNrYjN4dTh3dzY0ZGZpbXVidHBhcCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/HmO7FZjok6mhW/giphy.gif)
 ![](/media/lab01/Снимок%20экрана%202026-05-13%20в%2013.28.50.png)
+![](https://camo.githubusercontent.com/71028e0b774e445a84367e84fe40ad8ac58ae5a57d68b0978e0d2944417e84a8/68747470733a2f2f6d65646961312e74656e6f722e636f6d2f6d2f7536676d4e43362d55735941414141432f79756a692d73746172652d79756a692d697461646f72692e676966)
 
 ![](https://github.com/outtathe/ml-ds/raw/develop/materials/meme.jpeg)
 ![](https://github.com/outtathe/ml-ds/raw/develop/materials/meme.jpg)
 
-![](/media/lab01/прогер-gif.gif)
+</br>
+не листай вниз!!!
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+<img style="width: 400px" src="media/lab01/прогер-gif.gif"></img>
