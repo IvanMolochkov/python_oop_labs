@@ -1,10 +1,6 @@
 from typing import TypeVar, Generic, Callable, Optional, Protocol
 
 
-# ───────────────────────────────────────────────
-# Протоколы
-# ───────────────────────────────────────────────
-
 class Displayable(Protocol):
     def display(self) -> str:
         ...
@@ -13,20 +9,11 @@ class Scorable(Protocol):
     def score(self) -> float:
         ...
 
-
-# ───────────────────────────────────────────────
-# TypeVar
-# ───────────────────────────────────────────────
-
 T = TypeVar('T')
 R = TypeVar('R')
 D = TypeVar('D', bound=Displayable)
 S = TypeVar('S', bound=Scorable)
 
-
-# ───────────────────────────────────────────────
-# TypedCollection
-# ───────────────────────────────────────────────
 
 class TypedCollection(Generic[T]):
     def __init__(self) -> None:
@@ -85,19 +72,15 @@ class TypedCollection(Generic[T]):
         result._items = list(map(func, self._items))
         return result
 
-    # ── методы из задания на 4 ──
 
     def find(self, predicate: Callable[[T], bool]) -> Optional[T]:
-        """Возвращает первый элемент, удовлетворяющий условию, или None."""
         for item in self._items:
             if predicate(item):
                 return item
         return None
 
     def filter(self, predicate: Callable[[T], bool]) -> list[T]:
-        """Возвращает список всех элементов, удовлетворяющих условию."""
         return [item for item in self._items if predicate(item)]
 
     def map(self, transform: Callable[[T], R]) -> list[R]:
-        """Применяет функцию к каждому элементу и возвращает список результатов."""
         return [transform(item) for item in self._items]
