@@ -150,4 +150,3 @@ class PlayerList():
     def apply(self, func):
         result = list(map(func, self._items))
         return PlayerList(result)
-    

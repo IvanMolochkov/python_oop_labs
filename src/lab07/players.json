@@ -1,0 +1,28 @@
+[
+  {
+    "type": "Pitcher",
+    "name": "Gerrit Cole",
+    "age": 33,
+    "team": "New York Yankees",
+    "batting_avg": 0.28,
+    "home_runs": 11,
+    "position": "P",
+    "is_playing": "yes",
+    "ERA": 2.17,
+    "WHIP": 1.28,
+    "K_9": 22
+  },
+  {
+    "type": "Defensive",
+    "name": "Aaron Judge",
+    "age": 33,
+    "team": "New York Yankees",
+    "batting_avg": 0.331,
+    "home_runs": 360,
+    "position": "RF",
+    "is_playing": "yes",
+    "PO": 1246,
+    "A": 39,
+    "DP": 8
+  }
+]
